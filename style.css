@@ -1,2 +1,3 @@
-bodybackground {color : blue;
+body {
+  background: linear-gradient(to right, darkblue, blue);
 }
