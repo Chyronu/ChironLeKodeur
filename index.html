@@ -1,51 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moving Text Example</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: orange;
-    }
-
-    #movingText {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(0, -50%);
-      color: white;
-      font-size: 24px;
-      white-space: nowrap;
-    }
-  </style>
+  <title>Chiron le kodeur</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div id="movingText">Hello World</div>
+  <div id="movingText">Bonjour, je m'appelle Chiron et je fait du code de Ouf !</div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var movingText = document.getElementById("movingText");
-      var screenWidth = window.innerWidth;
-      var animationDuration = 5000; // 5 seconds
-
-      function moveText() {
-        movingText.style.transition = "none";
-        movingText.style.left = screenWidth + "px";
-
-        // Trigger reflow
-        movingText.offsetWidth;
-
-        movingText.style.transition = "left " + animationDuration / 1000 + "s linear";
-        movingText.style.left = "0";
-      }
-
-      setInterval(moveText, animationDuration);
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
 
