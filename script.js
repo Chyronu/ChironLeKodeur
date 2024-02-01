@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   var movingText = document.getElementById("movingText");
   var screenWidth = window.innerWidth;
-  var animationDuration = 5000; // 5 seconds
+  var animationDuration = 10000; // 10 seconds
 
   function moveText() {
     movingText.style.transition = "none";
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Trigger reflow
     movingText.offsetWidth;
 
-    movingText.style.transition = "left " + animationDuration / 1000 + "s linear";
+    movingText.style.transition = "left " + animationDuration / 4000 + "s linear";
     movingText.style.left = "0";
   }
 
