@@ -10,8 +10,8 @@ body {
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  color: white;
-  font-size: 24px;
+  color: rgb(236, 150, 37);
+  font-size: 70px;
   white-space: nowrap;
 }
 
@@ -24,9 +24,15 @@ img {
 p{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  
+  color: orange;
+
 }
 h1{
   font-weight: bold;
-  font-size: small;
+  font-size: large;
+}
+h2{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
