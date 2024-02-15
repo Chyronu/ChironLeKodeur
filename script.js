@@ -16,3 +16,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   setInterval(moveText, animationDuration);
 });
+
+function logIn() {
+
+  const logIn = document.getElementById("logIn").value ;
+  const access = console.log(logIn.innerHTML) ;
+}
